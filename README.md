@@ -24,9 +24,26 @@ This project is a single-page portfolio website that highlights Kamalesh's engin
 
 ## Deploy online
 
-This project is ready to deploy as a Node/Express web service.
+This project is ready to deploy on Vercel or Render.
 
-### Recommended: Render
+### Recommended: Vercel
+
+1. Go to [Vercel](https://vercel.com/) and sign in with GitHub.
+2. Click `Add New` > `Project`.
+3. Import `KamaleshCodes/Kamalesh_S_XSYS_Website-URL`.
+4. Use these settings:
+   ```text
+   Framework Preset: Other
+   Build Command: leave empty
+   Output Directory: public
+   Install Command: npm install
+   ```
+5. Click `Deploy`.
+6. Share the public `vercel.app` URL.
+
+Vercel serves files from `public/**` on its CDN and uses the files in `api/` as serverless functions for `/api/meta` and `/api/contact`.
+
+### Alternative: Render
 
 1. Push this project to a GitHub repository.
 2. Go to [Render](https://render.com/) and sign in.
@@ -52,7 +69,11 @@ kamalesh-portfolio/
 ├── server.js
 ├── package.json
 ├── render.yaml
+├── vercel.json
 ├── .env
+├── api/
+│   ├── contact.js
+│   └── meta.js
 ├── public/
 │   ├── index.html
 │   ├── css/
