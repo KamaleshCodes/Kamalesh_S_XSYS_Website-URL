@@ -1,0 +1,16 @@
+{
+  "name": "kamalesh-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for Kamalesh S using Node.js, Express, and a vanilla frontend.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "dotenv": "^16.4.3",
+    "express": "^4.18.4",
+    "helmet": "^7.0.0",
+    "morgan": "^1.10.0"
+  }
+}
